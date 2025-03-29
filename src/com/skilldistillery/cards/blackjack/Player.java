@@ -15,6 +15,10 @@ public class Player {
 	public void hit(Card card) {
 		hand.addCard(card);
 	}
+	public void displayHand() {
+	    hand.displayHand(true);
+	}
+	
 	public void stand() {
 		//skip
 	}
