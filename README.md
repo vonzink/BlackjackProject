@@ -26,7 +26,7 @@ making a working Blackjack game incorperating the fundamentals of OOP abstractio
 
 ## UML Diagram
 
-    ![UML Diagram](images/UMLDiagram.png)
+![UML Diagram](/Users/zacharyzink/SD/Java/workspace/BlackjackProject/images/UMLDiagram.png)
 
  ## Concepts Applied
 
