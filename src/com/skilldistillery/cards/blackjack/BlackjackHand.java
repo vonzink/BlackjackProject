@@ -6,7 +6,6 @@ public class BlackjackHand extends Hand {
 
 	// WARNING NO FIELDS
 
-	
 	public BlackjackHand() {}
 	
 	

@@ -30,7 +30,7 @@ public class Dealer extends Player {
 	}
 
 	public void reset() {
-		hand.clear();
+		hand.resetHand();
 		deck.shuffle(); 
 	}
 }

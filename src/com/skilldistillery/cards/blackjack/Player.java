@@ -15,13 +15,11 @@ public class Player {
 	public void hit(Card card) {
 		hand.addCard(card);
 	}
-	
 	public void stand() {
 		//skip
 	}
-	
 	public void resetHand() {
-		hand.clear(); 	
+		hand.resetHand(); 	
 	}
 	public int getHandValue(){
 		return hand.getHandValue(); 

@@ -4,7 +4,6 @@
  ![Blackjack Diagram](images/Blackjackpic.png)
 
 
-
 ## Description
 make a working Blackjack game incorperating the fundamentals of OOP abstraction, encapsulation, inheritance, and polymorphism. 
 Building classes in an Object-Oriented manner: APIE.
@@ -27,10 +26,7 @@ making a working Blackjack game incorperating the fundamentals of OOP abstractio
 
 ## UML Diagram
 
-    goes here when complete
-
-
-
+    ![Blackjack UML](images/UMLDiagram.jpg)
 
  ## Concepts Applied
 
@@ -43,7 +39,7 @@ making a working Blackjack game incorperating the fundamentals of OOP abstractio
 
 ## Plan
 
-# 1. Requirements & Planning
+### 1. Requirements & Planning
 - [x] Define project objectives and features
      - Story #1: Create class structure that models deck of cards. - done in class
      - Story #2: Create functionality of shuffling and removing cards from players hands - done in class
@@ -51,28 +47,30 @@ making a working Blackjack game incorperating the fundamentals of OOP abstractio
      - Story #4: Create logic for Blackjack with first facecard down - TBD
      - Story #5: Determine the winnner - TBD
 
-# 2. Design & Architecture
+### 2. Design & Architecture
 - [ ] Create UML diagrams or flowcharts
 - [ ] Define interfaces (set contracts for modules)
 - [ ] Plan your class hierarchy and component interactions
         - work in progress
 
-# 3. Set Up the Project Structure
+### 3. Set Up the Project Structure
 - [ ] Create package structure  - done in class
 
 
-# 4. Implement the Backbone
+### 4. Implement the Backbone
 - [ ] Write core classes
 - [ ] Build primary logic and workflows for a minimal viable version
     - work in progress
 
-# 8. Testing & Debugging
+### 8. Testing & Debugging
 - [ ] Run integration, system, and user acceptance tests
 
 
 
-## Leasons Learned
+### Leasons Learned
 
+    the diagrams help for finding what methods are in each class. 
+    need to make a seperate image folder for the readme if you want add pics. 
 
 
 
