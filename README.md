@@ -1,61 +1,86 @@
 # BlackjackProject
 
+
+ ![Blackjack Diagram](images/Blackjackpic.png)
+
+
+
 ## Description
+make a working Blackjack game incorperating the fundamentals of OOP abstraction, encapsulation, inheritance, and polymorphism. 
+Building classes in an Object-Oriented manner: APIE.
+Building classes whose fields are Objects (has-a).
+Writing methods.
+Using collections to organize and manage data.
+Using conditionals to create game logic.
+Considering common data and behaviors, and refactoring into parent / child classes.
+making a working Blackjack game incorperating the fundamentals of OOP abstraction, encapsulation, inheritance, and polymorphism. 
 
-
-
-## technologies used
+## Technologies used
  - Java
  - Eclipse
  - Git/GitHub
  - Sublime Text Editor
  - zsh
+ - Sublime
+ - docs.oracle.com/en/javase/8/docs/api
+ - 
+
+## UML Diagram
+
+    goes here when complete
+
+
+
 
  ## Concepts Applied
 
-  - Conditional Statements
-  - Mod
+    - Abstraction
 
- ## Lessons Learned
+    - Encapsulation
+    - Inheritance
+    - Polymorphism
+    - Composition
 
-## 1. Requirements & Planning
-- [ ] Define project objectives and features
-- [ ] Sketch user flows and main functionalities
-- [ ] Identify core features and external integrations
+## Plan
 
-## 2. Design & Architecture
+# 1. Requirements & Planning
+- [x] Define project objectives and features
+     - Story #1: Create class structure that models deck of cards. - done in class
+     - Story #2: Create functionality of shuffling and removing cards from players hands - done in class
+     - Story #3: Deal 2 hands of cards, 2 to each player. - Handled in the Dealer class. 
+     - Story #4: Create logic for Blackjack with first facecard down - TBD
+     - Story #5: Determine the winnner - TBD
+
+# 2. Design & Architecture
 - [ ] Create UML diagrams or flowcharts
 - [ ] Define interfaces (set contracts for modules)
 - [ ] Plan your class hierarchy and component interactions
+        - work in progress
 
-## 3. Set Up the Project Structure
-- [ ] Create package structure (e.g., `com.msfg.projectname`)
-- [ ] Set up build system (Maven/Gradle) and version control
+# 3. Set Up the Project Structure
+- [ ] Create package structure  - done in class
 
-## 4. Develop Core Interfaces & Domain Models
-- [ ] Code your interfaces (service contracts, data repositories)
-- [ ] Implement domain models (POJOs representing business entities)
 
-## 5. Implement the Backbone
-- [ ] Write core classes that implement the interfaces
+# 4. Implement the Backbone
+- [ ] Write core classes
 - [ ] Build primary logic and workflows for a minimal viable version
+    - work in progress
 
-## 6. Iterative Feature Development
-- [ ] Add features incrementally
-- [ ] Write unit tests for each module (TDD approach)
-
-## 7. Integration & UI
-- [ ] Integrate modules and connect the UI or API layer
-- [ ] Build and refine front-end or REST endpoints
-
-## 8. Testing & Debugging
+# 8. Testing & Debugging
 - [ ] Run integration, system, and user acceptance tests
-- [ ] Use your debugger (Eclipse/IntelliJ) to resolve issues
 
-## 9. Optimization & Refactoring
-- [ ] Clean up code and improve performance
-- [ ] Add documentation and apply design patterns where needed
 
-## 10. Deployment & Maintenance
-- [ ] Package your application (JAR/WAR) and deploy it
-- [ ] Set up monitoring and plan for future updates
+
+## Leasons Learned
+
+
+
+
+
+
+## Notes
+
+
+
+/zvz/
+
