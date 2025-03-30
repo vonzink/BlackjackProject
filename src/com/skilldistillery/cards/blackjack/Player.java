@@ -27,7 +27,7 @@ public class Player {
 	    return hand.isBlackjack();
 	}
 	public void stand() {
-		//skip
+		System.out.println("Player stands with a total of ");
 	}
 	public void resetHand() {
 		hand.resetHand(); 	
