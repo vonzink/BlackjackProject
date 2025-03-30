@@ -11,14 +11,14 @@ public class BlackjackApplication {
 	private Dealer dealer;
 	private Player player;
 
-	public static void main(String[] args) {
-		new BlackjackApplication().launch();
-
-	}
-
 	public BlackjackApplication() {
 		this.dealer = new Dealer();
 		this.player = new Player();
+	}
+
+	public static void main(String[] args) {
+		new BlackjackApplication().launch();
+
 	}
 
 	public void launch() {
@@ -99,7 +99,7 @@ public class BlackjackApplication {
 		System.out.println();
 		System.out.println("play another round?");
 		String answer = sc.nextLine();
-		return answer.equalsIgnoreCase("y");
+		return (answer.equalsIgnoreCase("yes")) || (answer.equalsIgnoreCase("y"));
 	}
 
 	public void checkWinner() {
@@ -109,18 +109,18 @@ public class BlackjackApplication {
 		boolean dealerBust = dealer.isBust();
 
 		if (playerBust) {
-			System.out.println("player bust dealer wins!");
+			System.out.println("PLAYER BUSTS DEALER WINS!");
 			System.out.println("Player: " + playerValue + " Dealer: " + dealerValue);
 		} else if (dealerBust) {
-			System.out.println("dealer bust player wins!");
+			System.out.println("DEALER BUSTS PLAYER WINS!");
 			System.out.println("Player: " + playerValue + " Dealer: " + dealerValue);
 		} else if (playerValue == dealerValue) {
-			System.out.println("its a push");
+			System.out.println("ITS A PUSH");
 		} else if (playerValue > dealerValue) {
-			System.out.println("player wins!!");
+			System.out.println("PLAYER WINS!!");
 			System.out.println("Player: " + playerValue + " Dealer: " + dealerValue);
 		} else
-			System.out.println("dealer wins!!");
+			System.out.println("DEALER WINS");
 		System.out.println("Player: " + playerValue + " Dealer: " + dealerValue);
 
 	}

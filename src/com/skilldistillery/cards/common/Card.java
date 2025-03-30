@@ -6,13 +6,14 @@ public class Card {
 //FIELDS
 	private Suit suit;
 	private Rank rank;
+
 //CONSTRUCTORS
 	public Card(Suit suit, Rank rank) {
 		super();
 		this.suit = suit;
 		this.rank = rank;
 	}
-	
+
 	public Card(Rank rank, Suit suit) {
 		super();
 		this.suit = suit;
@@ -20,11 +21,11 @@ public class Card {
 	}
 //METHODS
 
-	
 //GETTERS
 	public int getValue() {
-		return rank.getValue(); 
+		return rank.getValue();
 	}
+
 	@Override
 	public int hashCode() {
 		return Objects.hash(rank, suit);

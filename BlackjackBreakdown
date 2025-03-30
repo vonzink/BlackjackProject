@@ -1,0 +1,38 @@
+# BlackJack Package Breakdown
+
+## CLASS: BlackjackApplication 
+METHOD: BlackjackApplication -> creates dealer and player
+METHOD: main - > calls launch()
+METHOD: launch -> creates introductions-> Plays Round, -> calls Play again
+METHOD: playsRound -> resets hands -> deals -> calls playersTurn
+METHOD: playersTurn -> checks for blackjack -> asks for hit or stay -> getsCard -> determin if bust, get anthor card or stay-> calls dealerTurn
+METHOD: dealersTurn -> checks for blackjack -> hits if under 17 ->filps hidden card Boolean determins if it’s a bust. 
+METHOD: playagain -> checkwinner -> ask for another round
+METHOD: checkwinner -> if statement that shows who wins. 
+
+## CLASS: Dealer extends Player
+FIELD: deck
+METHOD: Deck -> get Deck
+METHOD: Card -> deal Card
+METHOD: beginPlay -> deals cards to start and 2 to each. 
+METHOD: displaysHand -.>For dealer
+METHOD: reset - > clears and reshuffles hand for dealer. 
+
+## CLASS: Player
+FIELD -> hand -> store methods from BlackjackHand
+CONSTRUCTOR -> player -> get hand from BlackjackHand
+METHOD -> hit -> add card
+METHOD -> displayHand -> players hand gets displayed at all index's
+METHOD -> isBust -> bust for player from blackjackhand
+METHOD -> isBlackjack -> blackjack for player from blackjackhand
+METHOD -> stand() -> method just for player
+METHOD -> resetHand - > for player
+METHOD -> getHandValue -> for player
+
+## CLASS : BlackjackHand
+CONSTRUCTOR - BlackjackHand -> not in use
+METHOD -> @overrides hand and includes blackajck logic for aces -> gets card value
+METHOD -> isBlackjack -> has blackjack logic for other classes to call
+METHOD -> isBust -> has bustlogic for other classes to call
+METHOD -> displayHand -> has logic to hide the first card in index 0
+

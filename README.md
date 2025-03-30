@@ -13,7 +13,6 @@ Using collections to organize and manage data.
 Using conditionals to create game logic.
 Considering common data and behaviors, and refactoring into parent / child classes.
 making a working Blackjack game incorperating the fundamentals of OOP abstraction, encapsulation, inheritance, and polymorphism. 
-
 no splitting, doubling or betting. 
 extra focus on Encapsulation.
 
@@ -25,7 +24,6 @@ extra focus on Encapsulation.
  - zsh
  - Sublime
  - docs.oracle.com/en/javase/8/docs/api
- - 
 
 ## UML Diagram
 
@@ -49,28 +47,26 @@ extra focus on Encapsulation.
   [x] - Story #2: Create functionality of shuffling and removing cards from players hands - done in class
   [x] - Story #3: Deal 2 hands of cards, 2 to each player. - Handled in the Dealer class. 
   [x] - Story #4: Create logic for Blackjack with first facecard down - complete
-  [x] - Story #5: Determine the winnner - TBD
+  [x] - Story #5: Determine the winnner - complete
 
 ### 2. Design & Architecture
 - [x] Create UML diagrams or flowcharts
-- [ ] Plan your class hierarchy and component interactions
-        - work in progress
+- [x] Plan your class hierarchy and component interactions 
+[Link Text](BlackjackProject/BlackJackBreakdown)
 
 ### 4. Implement the Backbone
 - [x] Write core classes
-- [X] Build primary logic and workflows for a minimal viable version - I completed and pushed this version at 11:45 sun March 30. 
-        going to go back and fix the ace. 
-
+- [X] Build primary logic and workflows for a minimal viable version - added ace logic
 
 ### 8. Testing & Debugging
-- [ ] Run integration, system, and user acceptance tests
+- [ ] some basic testing completed. seems to be working correctly under most circumstance. 
+
 
 ### Leasons Learned
 
-    the diagrams help for finding what methods are in each class. 
-    need to make a seperate image folder for the readme if you want add pics. 
-    create methods in reachable class for functionality without getters. 
-    
+- the diagrams help for finding what methods are in each class. 
+- need to make a seperate image folder for the readme if you want add pics. 
+- create methods in reachable class for functionality without getters. 
 ```
 //in Player
 public boolean isBust() {
@@ -81,10 +77,8 @@ public boolean isBust() {
         return hand.isBlackjack();
     }
 ```
-
-
-
-
+- follow the logic and try and put the action within the score of the object its related to. 
+- i need to remember every instance that extends class will have its own instance specific to that class so im not trying to recreate what already exists. .
 
 issue with the ace being 11.
 ```
@@ -98,4 +92,7 @@ Player: 22 Dealer: 9
 Player: 22 Dealer: 9
 
 play another round?
+```
+FIXED: added a tally to the getHandValue method. 
+
 

@@ -7,18 +7,26 @@ public class BlackjackHand extends Hand {
 
 	// WARNING NO FIELDS
 
-	public BlackjackHand() {}
-	
-	
+	public BlackjackHand() {
+	}
 	@Override
 	public int getHandValue() {
-		    int total = 0;
-		    for (Card card : cardsInHand) {
-		        total += card.getValue();
-		    }
-		    return total;
+		int total = 0;
+		int aces = 0;
+		for (Card card : cardsInHand) {
+			if (card.getValue() == 11)
+				aces++;
+
+			if (total > 21 && aces > 0) {
+				total -= 10;
+				aces--;
+			}
+			total += card.getValue();
+
 		}
-	
+		return total;
+	}
+
 	public boolean isBlackjack() {
 		return (cardsInHand.size() == 2 && getHandValue() == 21);
 	}
@@ -34,7 +42,7 @@ public class BlackjackHand extends Hand {
 			} else {
 				System.out.println(cardsInHand.get(i).toString());
 			}
+
 		}
 	}
 }
-
