@@ -30,7 +30,7 @@ public class BlackjackHand extends Hand {
 	public void displayHand(boolean showAll) {
 		for (int i = 0; i < cardsInHand.size(); i++) {
 			if (!showAll && i == 0) {
-				System.out.println("[Dealer Card]");
+				System.out.println("[\u2665\u2666\u2660\u2663]" + " - face down card");
 			} else {
 				System.out.println(cardsInHand.get(i).toString());
 			}

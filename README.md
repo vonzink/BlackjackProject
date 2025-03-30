@@ -14,6 +14,9 @@ Using conditionals to create game logic.
 Considering common data and behaviors, and refactoring into parent / child classes.
 making a working Blackjack game incorperating the fundamentals of OOP abstraction, encapsulation, inheritance, and polymorphism. 
 
+no splitting, doubling or betting. 
+extra focus on Encapsulation.
+
 ## Technologies used
  - Java
  - Eclipse
@@ -55,26 +58,44 @@ making a working Blackjack game incorperating the fundamentals of OOP abstractio
 
 ### 4. Implement the Backbone
 - [x] Write core classes
-- [ ] Build primary logic and workflows for a minimal viable version
+- [X] Build primary logic and workflows for a minimal viable version - I completed and pushed this version at 11:45 sun March 30. 
+        going to go back and fix the ace. 
 
 
 ### 8. Testing & Debugging
 - [ ] Run integration, system, and user acceptance tests
 
-
-
 ### Leasons Learned
 
     the diagrams help for finding what methods are in each class. 
     need to make a seperate image folder for the readme if you want add pics. 
+    create methods in reachable class for functionality without getters. 
+    
+```
+//in Player
+public boolean isBust() {
+        return hand.isBust();
+    }
+
+    public boolean isBlackjack() {
+        return hand.isBlackjack();
+    }
+```
 
 
 
 
 
-## Notes
+issue with the ace being 11.
+```
+4 of ♦ Dimonds
+10 of ♠ Spades
+8 of ♦ Dimonds
+Player has: 22
+Player busts with a total of 22
+player bust dealer wins!
+Player: 22 Dealer: 9
+Player: 22 Dealer: 9
 
-
-
-/zvz/
+play another round?
 

@@ -53,10 +53,10 @@ public class BlackjackApplication {
 		}
 		do {
 			System.out.println("would you like to HIT or STAY?");
-			System.out.println( "type 'Hit' or anything else to stay");
+			System.out.println("'h' or 'hit' to hit.. anything else to stay");
 			String answer = sc.nextLine();
 
-			if ((answer.equalsIgnoreCase("hit"))||(answer.equalsIgnoreCase("h"))) {
+			if ((answer.equalsIgnoreCase("hit")) || (answer.equalsIgnoreCase("h"))) {
 				player.hit(dealer.dealCard());
 				player.displayHand();
 				System.out.println("Player has: " + player.getHandValue());
@@ -107,16 +107,14 @@ public class BlackjackApplication {
 		int dealerValue = dealer.getHandValue();
 		boolean playerBust = player.isBust();
 		boolean dealerBust = dealer.isBust();
-		
+
 		if (playerBust) {
-		System.out.println("player bust dealer wins!");
-		System.out.println("Player: " + playerValue + " Dealer: " + dealerValue);
-		}
-		if (dealerBust) {
+			System.out.println("player bust dealer wins!");
+			System.out.println("Player: " + playerValue + " Dealer: " + dealerValue);
+		} else if (dealerBust) {
 			System.out.println("dealer bust player wins!");
 			System.out.println("Player: " + playerValue + " Dealer: " + dealerValue);
-			}
-		if (playerValue == dealerValue) {
+		} else if (playerValue == dealerValue) {
 			System.out.println("its a push");
 		} else if (playerValue > dealerValue) {
 			System.out.println("player wins!!");
