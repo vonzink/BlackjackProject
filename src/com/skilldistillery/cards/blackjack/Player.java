@@ -19,6 +19,13 @@ public class Player {
 	    hand.displayHand(true);
 	}
 	
+	public boolean isBust() {
+	    return hand.isBust();
+	}
+
+	public boolean isBlackjack() {
+	    return hand.isBlackjack();
+	}
 	public void stand() {
 		//skip
 	}

@@ -27,7 +27,6 @@ public class BlackjackApplication {
 		System.out.println();
 		do {
 			playRound();
-
 		} while (playAgain());
 		System.out.println(", goodbye!");
 	}
@@ -36,39 +35,48 @@ public class BlackjackApplication {
 		dealer.reset();
 		player.resetHand();
 		dealer.beginPlay(player);
-		System.out.print("Dealers Hand: ");
+		System.out.println("Dealers Hand: ");
 		dealer.displayHand(false);
 		System.out.println();
 		player.displayHand();
-		System.out.println(player.getHandValue());
+		System.out.println("Total: " + player.getHandValue());
 		playersTurn();
 	}
 
 	private void playersTurn() {
-		System.out.println("Do you want to hit or stay?");
-		String hit = sc.nextLine();
-		if (hit.equalsIgnoreCase("hit")) {
-			player.hit(dealer.dealCard());
-			player.displayHand();
-			if (player.getHandValue() > 21) {
-				System.out.println("Bust!");
-			} else {
-				this.playersTurn();
+
+		if (dealer.isBlackjack()) {
+			System.out.println("Dealer got Blackjack!");
+			return;
+		}
+
+		while (dealer.getHandValue() < 17) {
+			dealer.hit(dealer.dealCard());
+			System.out.println("Dealer hits:");
+			dealer.displayHand(true);
+
+			if (dealer.isBust()) {
+				System.out.println("Dealer busts with a total of " + dealer.getHandValue());
+				return;
 			}
 		}
+
+		System.out.println("Dealer stands with a total of " + dealer.getHandValue());
 	}
 
 	public void dealersTurn() {
-		dealer.getHandValue();
+
+		while (dealer.getHandValue() < 17) {
+			dealer.hit(dealer.dealCard());
+			System.out.println("Dealer hits:");
+			dealer.displayHand(true);
+		}
+		System.out.println("Dealer stands with a total of " + dealer.getHandValue());
 	}
 
 	public boolean playAgain() {
-		boolean playAgain = true;
 		System.out.println("play another round?");
 		String answer = sc.nextLine();
-		if (answer.equalsIgnoreCase("y"))
-			;
-		return playAgain;
+		return answer.equalsIgnoreCase("y");
 	}
-
 }
