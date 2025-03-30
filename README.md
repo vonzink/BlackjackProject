@@ -52,7 +52,7 @@ extra focus on Encapsulation.
 ### 2. Design & Architecture
 - [x] Create UML diagrams or flowcharts
 - [x] Plan your class hierarchy and component interactions 
-[Link Text](BlackjackProject/BlackJackBreakdown)
+![BLACKJACK PACKAGE BREAKDOWN](BlackjackProject/BlackJackBreakdown)`
 
 ### 4. Implement the Backbone
 - [x] Write core classes
